@@ -1,6 +1,5 @@
 package com.vardek.sc2bot.agent;
 
-import com.github.ocraft.s2client.bot.S2Agent;
 import com.github.ocraft.s2client.bot.gateway.UnitInPool;
 import com.github.ocraft.s2client.protocol.data.Abilities;
 import com.github.ocraft.s2client.protocol.data.Units;
@@ -15,7 +14,10 @@ public class TerranBot extends Bot {
     private Strategy strategy;
 
     public TerranBot(){
+    }
 
+    public TerranBot(Strategy strategy){
+        this.strategy = strategy;
     }
 
     @Override
@@ -40,8 +42,14 @@ public class TerranBot extends Bot {
         }
     }
 
+    @Override
     public Race getRace() {
         return race;
+    }
+
+    @Override
+    public void setStrategy(Strategy strategy){
+        this.strategy = strategy;
     }
 
 

@@ -1,5 +1,7 @@
 package com.vardek.sc2bot.strategy.common;
 
-public class WorkerRushStrategy {
+import com.vardek.sc2bot.strategy.Strategy;
+
+public class WorkerRushStrategy implements Strategy {
 
 }

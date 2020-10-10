@@ -1,6 +1,5 @@
 package com.vardek.sc2bot.agent;
 
-import com.github.ocraft.s2client.bot.S2Agent;
 import com.github.ocraft.s2client.bot.gateway.UnitInPool;
 import com.github.ocraft.s2client.protocol.data.Abilities;
 import com.github.ocraft.s2client.protocol.data.Units;
@@ -15,7 +14,6 @@ public class ProtossBot extends Bot {
     private Strategy strategy;
 
     public ProtossBot(){
-
     }
 
     @Override
@@ -40,8 +38,14 @@ public class ProtossBot extends Bot {
         }
     }
 
+    @Override
     public Race getRace() {
         return race;
+    }
+
+    @Override
+    public void setStrategy(Strategy strategy) {
+        //todo
     }
 
 

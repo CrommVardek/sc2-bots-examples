@@ -16,7 +16,7 @@ public class Application {
 
     public static void main(String[] args){
 
-        Bot bot = new ProtossBot();
+        Bot bot = new TerranBot();
 
         OneVSOneMap map = new PillarsOfGold();
 
